@@ -7,19 +7,67 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>FAST AND BNB | The best investment game on Binance blockchain.</title>
-	<link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/lib/slick/slick.css">
-	<link rel="stylesheet" href="css.css?family=Montserrat:300,400,500,600,700%7CWork+Sans:400,500,600,700%7CPlayfair+Display:400,700">
+	<!-- <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="assets/lib/slick/slick.css"> -->
 	<link rel="stylesheet" href="releases/v5.5.0/css/all.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/main.css?11121">
+		<link rel="stylesheet" href="assets/css/main.css?11121">
+
+	<!-- FONT AWESOME CDN -->
+	<link
+		rel="stylesheet"
+		href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+		crossorigin="anonymous"
+	/>
+	<!-- GOOGLE FONTS -->
+	<link rel="stylesheet" href="css.css?family=Montserrat:300,400,500,600,700%7CWork+Sans:400,500,600,700%7CPlayfair+Display:400,700">
+	<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" href="/assets/css/index.min.css">
 	<link rel="icon" href="assets/images/favicon.png">
 </head>
 <body>
-	<!-- <div id="page-loader"> -->
-		<!-- <i class="fab fa-cog fa-spin grad-text grad-2"></i> -->
-	<!-- </div> -->
 
 	<header>
+
+		<div class="navbar-area">
+			
+			  <nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand" href="index.html">
+				  <img src="assets/images/logo.png" alt="Logo" />
+				</a>
+				<button class="navbar-toggler" type="button">
+				  <span class="toggler-icon"></span>
+				  <span class="toggler-icon"></span>
+				  <span class="toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse">
+				  <ul id="nav" class="navbar-nav">
+					<li class="nav-item active">
+					  <a class="page-scroll" href="#hero">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="page-scroll" href="#games">Invest</a>
+					</li>
+					<li class="nav-item">
+					  <a class="page-scroll" href="#contracts">Benefits</a>
+					</li>
+					<li class="nav-item">
+					  <a class="page-scroll" href="#contracts">FAQ</a>
+					</li>
+					<li class="nav-item">
+					  <a class="page-scroll" href="#contracts">Contract</a>
+					</li>
+				  </ul>
+				</div>
+				<!-- navbar collapse -->
+			  </nav>
+			  <!-- navbar -->
+			
+		  </div>
+
+
+
+<!-- 		
 		<nav class="side-menu-container" id="mobile-menu">
 			<ul class="mx-auto top-level clearfix">
 				<li class="with-submenu">
@@ -38,6 +86,7 @@
 				</li>
 			</ul>
 		</nav>
+
 		<div class="pos-r">
 			<div id="topbar" class="clearfix">
 
@@ -53,9 +102,6 @@
 							<li><a href="rus.html"><img src="assets/images/flag-ru.png" alt="ru">RU</a></li>
 						</ul>
 					</div>
-					
-
-
 
 					<div class="side-menu">
 						<a href="#" class="side-menu-button"><span></span><span></span><span></span></a>
@@ -65,7 +111,7 @@
 
 				<div class="logo pull-left">
 					<a href="index.htm">
-						<h1><img src="assets/images/top-logo.png" alt="logo"></h1>
+						<img src="assets/images/logo.png" alt="logo">
 					</a>
 				</div>
 				<nav id="desktop-menu">
@@ -83,17 +129,17 @@
 
 						<li class="with-submenu">
 							<a href="https://bscscan.com/address/0x847ff221d4b8f92a51eca9492f5283514603be66#code" class="link-hover" target="_blank">CONTRACT [OPEN SOURCE]</a>
-						</li>						
+						</li>
 					</ul>
 
 				</nav>
 			</div>
-		</div>
+		</div> -->
 		<div class="header-content fullheight">
 			<div class="slick-header fullheight">
 
 				<div class="header-slide slide-1">
-					<img src="assets/images/slider-bg-3.jpg" alt="Slider Background" class="slider-background">
+					<img src="assets/images/hero-desktop.jpg" alt="Slider Background" class="slider-background">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 offset-md-6">
@@ -102,13 +148,13 @@
 							<div class="col-md-6 offset-md-6">
 								<p>
 									Decentralized & Secure Smart Contract Fund.
-									
+
 								</p>
 							</div>
 							<div class="col-lg-6 offset-lg-6">
-								<a href="#investPlans" class="button-link-1 style-3 pushtop-30">INVEST NOW <i class="fas fa-caret-right"></i></a>	
+								<a href="#investPlans" class="button-link-1 style-3 pushtop-30">INVEST NOW <i class="fas fa-caret-right"></i></a>
 							</div>
-						</div>	
+						</div>
 					</div>
 				</div>
 			</div>
@@ -123,8 +169,30 @@
 			<h3 id="contractBalance" class="blue"><i class="fas fa-spinner fa-spin"></i> BNB</h3>
 			<br>Your BNB wallet: <b id="yourAcc"><i class="fas fa-spinner fa-spin"></i></b>
 			<br>Your wallet balance: <b id="accBalance"><i class="fas fa-spinner fa-spin"></i></b> BNB
-			
+		</div>
 
+		<div class="carrousel">
+			<input type="radio" name="slider" id="item-1" checked>
+			<input type="radio" name="slider" id="item-2">
+			<input type="radio" name="slider" id="item-3">
+			<input type="radio" name="slider" id="item-4">
+		  <div class="cards">
+			<label class="card" for="item-1" id="song-1">
+			  <img src="assets/images/widget-7-elm-1.png" alt="song">
+			</label>
+			<label class="card" for="item-2" id="song-2">
+			  <img src="assets/images/widget-7-elm-2.png" alt="song">
+			</label>
+			<label class="card" for="item-3" id="song-3">
+			  <img src="assets/images/widget-7-elm-3.png" alt="song">
+			</label>
+			<label class="card" for="item-4" id="song-4">
+			  <img src="assets/images/widget-7-elm-4.png" alt="song">
+			</label>
+		  </div>
+		</div>
+
+		<div>
 			<div class="container" id="investPlans">
 				<div class="row pushtop-50">
 
@@ -136,17 +204,17 @@
 								<li>Dividends every second</li>
 								<li><b>30 days</b></li>
 								<li>Total return <b>200%</b></li>
-								<li>Min. investment is 0.01 BNB</li>								
+								<li>Min. investment is 0.01 BNB</li>
 								<br><br>
-								<div class="input-group mb-2 mr-sm-2" style="position:relative; left:23px;">							
+								<div class="input-group mb-2 mr-sm-2" style="position:relative; left:23px;">
 									<input type="text" autocomplete="off" placeholder="0" min="0.01" class="form-control text-center" id="trxForPlan0">
 									<div class="input-group-append text-orange">
 									  BNB
-									</div>				
-								</div>									
+									</div>
+								</div>
 							</ul>
 							<a href="javascript: invest(0)" class="button-link-1">INVEST</a>
-							
+
 						</div>
 					</div>
 
@@ -158,14 +226,14 @@
 								<li>Dividends every second</li>
 								<li><b>2 days</b></li>
 								<li>Total return <b>101%</b></li>
-								<li>Min. investment is 0.01 BNB</li>								
+								<li>Min. investment is 0.01 BNB</li>
 								<br><br>
-								<div class="input-group mb-2 mr-sm-2" style="position:relative; left:23px;">							
+								<div class="input-group mb-2 mr-sm-2" style="position:relative; left:23px;">
 									<input type="text" autocomplete="off" placeholder="0" min="0.01" class="form-control text-center" id="trxForPlan1">
 									<div class="input-group-append text-orange">
 									  BNB
-									</div>				
-								</div>	
+									</div>
+								</div>
 							</ul>
 							<a href="javascript: invest(1)" class="button-link-1">INVEST</a>
 						</div>
@@ -179,14 +247,14 @@
 								<li>Dividends every second</li>
 								<li><b>4 days</b></li>
 								<li>Total return <b>104%</b></li>
-								<li>Min. investment is 0.01 BNB</li>								
+								<li>Min. investment is 0.01 BNB</li>
 								<br><br>
-								<div class="input-group mb-2 mr-sm-2" style="position:relative; left:23px;">							
+								<div class="input-group mb-2 mr-sm-2" style="position:relative; left:23px;">
 									<input type="text" autocomplete="off" placeholder="0" min="0.01" class="form-control text-center" id="trxForPlan2">
 									<div class="input-group-append text-orange">
 									  BNB
-									</div>				
-								</div>	
+									</div>
+								</div>
 							</ul>
 							<a href="javascript: invest(2)" class="button-link-1">INVEST</a>
 						</div>
@@ -200,18 +268,18 @@
 								<li>Dividends every second</li>
 								<li><b>10 days</b></li>
 								<li>Total return <b>120%</b></li>
-								<li>Min. investment is 0.01 BNB</li>								
+								<li>Min. investment is 0.01 BNB</li>
 								<br><br>
-								<div class="input-group mb-2 mr-sm-2" style="position:relative; left:23px;">							
+								<div class="input-group mb-2 mr-sm-2" style="position:relative; left:23px;">
 									<input type="text" autocomplete="off" placeholder="0" min="0.01" class="form-control text-center" id="trxForPlan3">
 									<div class="input-group-append text-orange">
 									  BNB
-									</div>				
-								</div>	
+									</div>
+								</div>
 							</ul>
 							<a href="javascript: invest(3)" class="button-link-1">INVEST</a>
 						</div>
-					</div>					
+					</div>
 
 				</div>
 			</div>
@@ -238,10 +306,10 @@
 								</div>
 								<div class="col-md-6">
 									<h4><i class="fas fa-user-friends"></i> Referral program</h4>
-									<br>Your referral link [<a href='javascript:copyRef()' id="copy">COPY LINK</a>]: 
+									<br>Your referral link [<a href='javascript:copyRef()' id="copy">COPY LINK</a>]:
 									<div id="yourRefLink" style="font-weight:bold;">no link...</div>
 									You can get your referral link after investing.<br>
-									
+
 									<br>1 referral （5% Referral rewards） - <b id="level1RefCount">0</b>
 									<br>2 referral （2% Referral rewards） - <b id="level2RefCount">0</b>
 									<br>3 referral （0.5% Referral rewards） - <b id="level3RefCount">0</b>
@@ -250,23 +318,23 @@
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 
 		<div class="widget-2 text-left pushtop-100 drag-this-up" id="widget-2">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
-						
+
 						<h3><i class="fas fa-university"></i> My investments</h3><br><br>
 						<div id="myIvestments"></div>
 						My total investment <b class="totalInvestment">0.00</b> BNB
 						<br>
-						Total dividends so far <b class="totalDivs">0.00</b> BNB						
-						<br>						
+						Total dividends so far <b class="totalDivs">0.00</b> BNB
+						<br>
 						<a href="#investPlans" class="button-link-1 style-3 pushtop-30">INVEST NOW <i class="fas fa-caret-right"></i></a>
 					</div>
 					<div class="col-lg-6">
@@ -318,7 +386,7 @@
 
 
 
-	
+
 
 
 
@@ -334,7 +402,7 @@
 <br>New RPC URL: https://bsc-dataseed.binance.org/
 <br>Chain ID: 56
 <br>Currency Symbol (optional): BNB
-<br>Block Explorer URL (optional): https://bscscan.com						
+<br>Block Explorer URL (optional): https://bscscan.com
 <br>						Then transfer the BNB from the exchange <a href="https://binance.com" target="_blank">https://binance.com</a> to the wallet. Finally, login on Metamask to browse this website and invest.</p>
 					</div>
 					<div class="img-pin"></div>
@@ -350,7 +418,7 @@
 						<img src="assets/images/widget-7-elm-4.png" alt="element-image">
 						<h6>How is the fund distributed?</h6>
 						<p>Technical support: 2.5% Marketing: 2.5% Referral: 5%-2%-0.5% Invitee: 0.5%</p>
-					</div>					
+					</div>
 					<div class="img-pin"></div>
 				</div><div class="rising-elm elm-4" data-trigger="400">
 					<div class="rising-inner">
@@ -389,9 +457,18 @@
 var lang="eng";
 var inProcessing="In the processing...";
 var error1="Error: It wasn't a number";
+  
+      let navbarToggler = document.querySelector(".navbar-toggler");
+      let menu = document.querySelector(".collapse");
+      navbarToggler.addEventListener("click", function () {
+        menu.classList.toggle("show");
+      });
+  
 </script>
+
 <script src="assets/lib/jquery/jquery.js"></script>
 <script src="assets/lib/jquery-ui/jquery-ui.min.js"></script>
+<script src="assets/js/navbar.js"></script>
 <script src="assets/lib/visible/visible.js"></script>
 <script src="assets/lib/imagesLoaded/imagesLoaded.min.js"></script>
 <script src="assets/js/main.js?1"></script>
