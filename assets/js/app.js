@@ -666,11 +666,12 @@ function copyRef() {
     window['getSelection']()['addRange'](_0x92e6x23);
     try {
         document['execCommand']('copy');
-        $('#copy')['html']('copied!');
+        document.querySelector(".widget-4 .copy-ref .fas").classList.toggle("active");
         setTimeout(function() {
-            $('#copy')['html']('COPY LINK')
+            document.querySelector(".widget-4 .copy-ref .fas").classList.toggle("active");
         }, 3000)
     } catch (err) {
+        console.log(err)
         console['log']('Can`t copy')
     };
     window['getSelection']()['removeAllRanges']()
