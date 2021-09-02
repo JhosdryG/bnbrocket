@@ -30,15 +30,12 @@ reserveTL
     ">"
   )
   .from(
-    ".swiper-slide-prev, .swiper-slide-next",
+    ".swiper-slide-next",
     {
       stagger: 0.3,
       opacity: 0,
       duration: 0.4,
       onComplete: function () {
-        document
-          .querySelector(".swiper-slide-prev")
-          .style.removeProperty("opacity");
         document
           .querySelector(".swiper-slide-next")
           .style.removeProperty("opacity");
@@ -79,14 +76,14 @@ const investmentsTL = gsap.timeline({
 });
 
 investmentsTL
-  .from(".col-lg-6:nth-child(1)", {
+  .from(".widget-2 .col-lg-6:nth-child(1)", {
     opacity: 0,
     x: -80,
     y: 80,
     duration: 0.7,
   })
   .from(
-    ".col-lg-6:nth-child(2)",
+    ".widget-2 .col-lg-6:nth-child(2)",
     {
       opacity: 0,
       x: 80,
